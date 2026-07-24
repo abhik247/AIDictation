@@ -1,0 +1,98 @@
+[
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__test",
+    "output": "test"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson test --no-rebuild --print-errorlogs",
+    "file": "all",
+    "output": "meson-internal__test"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__benchmark",
+    "output": "benchmark"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson test --benchmark --logbase benchmarklog --num-processes=1 --no-rebuild",
+    "file": "all",
+    "output": "meson-internal__benchmark"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__install",
+    "output": "install"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson install --no-rebuild",
+    "file": "PHONY",
+    "output": "meson-internal__install"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__dist",
+    "output": "dist"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson dist",
+    "file": "PHONY",
+    "output": "meson-internal__dist"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__ctags",
+    "output": "ctags"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson --internal tags ctags /home/abhik/Projects/AIDictation",
+    "file": "PHONY",
+    "output": "meson-internal__ctags"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__uninstall",
+    "output": "uninstall"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson --internal uninstall",
+    "file": "PHONY",
+    "output": "meson-internal__uninstall"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "",
+    "file": "meson-internal__clean",
+    "output": "clean"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/ninja -t clean",
+    "file": "PHONY",
+    "output": "meson-internal__clean"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson --internal regenerate /home/abhik/Projects/AIDictation .",
+    "file": "../meson.build",
+    "output": "build.ninja"
+  },
+  {
+    "directory": "/home/abhik/Projects/AIDictation/build",
+    "command": "/usr/bin/meson --internal regenerate /home/abhik/Projects/AIDictation .",
+    "file": "PHONY",
+    "output": "reconfigure"
+  }
+]

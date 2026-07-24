@@ -1,0 +1,14 @@
+The Meson build system
+Version: 1.11.2
+Source dir: /home/abhik/Projects/AIDictation
+Build dir: /home/abhik/Projects/AIDictation/build
+Build type: native build
+Project name: aidictation
+Project version: 0.1.0
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Program python3 found: YES (/usr/bin/python3)
+Configuring aidictation using configuration
+Build targets in project: 0
+
+Found ninja-1.13.2 at /usr/bin/ninja

@@ -1,2 +1,3 @@
-# AIDictation
-Flatpak dictation app for linux
+# aidictation
+
+A description of this project.

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Name=AI Dictation
+Comment=Voice transcription powered by AI
+Exec=aidictation
+Icon=com.github.abhik247.AIDictation
+Terminal=false
+Type=Application
+Categories=Utility;Audio;AudioVideo;
+Keywords=dictation;speech;speech-to-text;transcription;ai;whisper;openai;gemini;
+StartupNotify=true

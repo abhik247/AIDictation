@@ -1,0 +1,50 @@
+Build started at 2026-07-24T20:04:36.197077
+Main binary: /usr/bin/python3
+Build Options: 
+Python system: Linux
+The Meson build system
+Version: 1.11.2
+Source dir: /home/abhik/Projects/AIDictation
+Build dir: /home/abhik/Projects/AIDictation/build
+Build type: native build
+Project name: aidictation
+Project version: 0.1.0
+Build machine cpu family: x86_64
+Build machine cpu: x86_64
+Host machine cpu family: x86_64
+Host machine cpu: x86_64
+Target machine cpu family: x86_64
+Target machine cpu: x86_64
+Program python3 found: YES (/usr/bin/python3)
+Configuring aidictation using configuration
+Build targets in project: 0
+
+Found ninja-1.13.2 at /usr/bin/ninja
+Failed to guess install tag for /usr/local/share/applications/com.github.abhik247.AIDictation.desktop
+Failed to guess install tag for /usr/local/share/metainfo/com.github.abhik247.AIDictation.metainfo.xml
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/__init__.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/main.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/models.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/__init__.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/audio_recorder.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/openai_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/reword_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/settings_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/startup_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/ui/__init__.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/ui/floating_widget.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/ui/main_window.py
+Failed to guess install tag for /usr/local/share/applications/com.github.abhik247.AIDictation.desktop
+Failed to guess install tag for /usr/local/share/metainfo/com.github.abhik247.AIDictation.metainfo.xml
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/__init__.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/main.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/models.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/__init__.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/audio_recorder.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/openai_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/reword_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/settings_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/services/startup_service.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/ui/__init__.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/ui/floating_widget.py
+Failed to guess install tag for /usr/local/share/aidictation/aidictation/ui/main_window.py

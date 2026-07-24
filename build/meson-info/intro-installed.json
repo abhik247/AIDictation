@@ -1,0 +1,17 @@
+{
+  "/home/abhik/Projects/AIDictation/com.github.abhik247.AIDictation.desktop": "/usr/local/share/applications/com.github.abhik247.AIDictation.desktop",
+  "/home/abhik/Projects/AIDictation/com.github.abhik247.AIDictation.metainfo.xml": "/usr/local/share/metainfo/com.github.abhik247.AIDictation.metainfo.xml",
+  "/home/abhik/Projects/AIDictation/build/src/aidictation": "/usr/local/bin/aidictation",
+  "/home/abhik/Projects/AIDictation/src/aidictation/__init__.py": "/usr/local/share/aidictation/aidictation/__init__.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/main.py": "/usr/local/share/aidictation/aidictation/main.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/models.py": "/usr/local/share/aidictation/aidictation/models.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/services/__init__.py": "/usr/local/share/aidictation/aidictation/services/__init__.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/services/audio_recorder.py": "/usr/local/share/aidictation/aidictation/services/audio_recorder.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/services/openai_service.py": "/usr/local/share/aidictation/aidictation/services/openai_service.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/services/reword_service.py": "/usr/local/share/aidictation/aidictation/services/reword_service.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/services/settings_service.py": "/usr/local/share/aidictation/aidictation/services/settings_service.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/services/startup_service.py": "/usr/local/share/aidictation/aidictation/services/startup_service.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/ui/__init__.py": "/usr/local/share/aidictation/aidictation/ui/__init__.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/ui/floating_widget.py": "/usr/local/share/aidictation/aidictation/ui/floating_widget.py",
+  "/home/abhik/Projects/AIDictation/src/aidictation/ui/main_window.py": "/usr/local/share/aidictation/aidictation/ui/main_window.py"
+}

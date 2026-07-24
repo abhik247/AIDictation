@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.abhik247.AIDictation</id>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <name>AI Dictation</name>
+  <summary>A modern, feature-rich dictation app</summary>
+  <description>
+    <p>
+      AI Dictation is a modern desktop speech-to-text dictation application powered by OpenAI Whisper, GPT-4, and Google Gemini models.
+    </p>
+  </description>
+  <launchable type="desktop-id">com.github.abhik247.AIDictation.desktop</launchable>
+  <developer_name>Abhik</developer_name>
+</component>

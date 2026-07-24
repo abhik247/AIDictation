@@ -1,0 +1,82 @@
+{
+  "targets": {},
+  "data": {
+    "/home/abhik/Projects/AIDictation/com.github.abhik247.AIDictation.desktop": {
+      "destination": "{datadir}/applications/com.github.abhik247.AIDictation.desktop",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/com.github.abhik247.AIDictation.metainfo.xml": {
+      "destination": "{datadir}/metainfo/com.github.abhik247.AIDictation.metainfo.xml",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/__init__.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/__init__.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/main.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/main.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/models.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/models.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/services/__init__.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/services/__init__.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/services/audio_recorder.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/services/audio_recorder.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/services/openai_service.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/services/openai_service.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/services/reword_service.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/services/reword_service.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/services/settings_service.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/services/settings_service.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/services/startup_service.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/services/startup_service.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/ui/__init__.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/ui/__init__.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/ui/floating_widget.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/ui/floating_widget.py",
+      "tag": null,
+      "subproject": null
+    },
+    "/home/abhik/Projects/AIDictation/src/aidictation/ui/main_window.py": {
+      "destination": "{prefix}/share/aidictation/aidictation/ui/main_window.py",
+      "tag": null,
+      "subproject": null
+    }
+  },
+  "configure": {
+    "/home/abhik/Projects/AIDictation/build/src/aidictation": {
+      "destination": "{bindir}/aidictation",
+      "tag": "runtime",
+      "subproject": null
+    }
+  }
+}
