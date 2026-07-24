@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import shutil
 import subprocess
 import gi
 
@@ -58,6 +59,8 @@ class MainWindow(Adw.ApplicationWindow):
         self.connect("close-request", self._on_close_requested)
 
     def _build_ui(self):
+        self.toast_overlay = Adw.ToastOverlay()
+
         # Navigation stack to handle Main View, Settings View, API Settings, Prompts Customization
         self.nav_stack = Gtk.Stack()
         self.nav_stack.set_transition_type(Gtk.StackTransitionType.SLIDE_LEFT_RIGHT)
@@ -78,7 +81,8 @@ class MainWindow(Adw.ApplicationWindow):
         self.prompts_view = self._build_prompts_view()
         self.nav_stack.add_named(self.prompts_view, "prompts")
 
-        self.set_content(self.nav_stack)
+        self.toast_overlay.set_child(self.nav_stack)
+        self.set_content(self.toast_overlay)
 
     def _build_main_view(self) -> Gtk.Widget:
         box = Gtk.Box(orientation=Gtk.Orientation.VERTICAL, spacing=12)
@@ -413,6 +417,14 @@ class MainWindow(Adw.ApplicationWindow):
         self.always_on_top_row.set_active(self.settings.always_on_top)
         self.launch_startup_row.set_active(self.settings.launch_at_startup)
         self.background_row.set_active(self.settings.keep_running_in_background)
+
+        # Language dropdown selection
+        if self.settings.input_language == "Bengali (bn-IN)":
+            self.lang_dropdown.set_selected(1)
+        elif self.settings.input_language == "Hindi":
+            self.lang_dropdown.set_selected(2)
+        else:
+            self.lang_dropdown.set_selected(0)
 
         # Provider selections
         trans_idx = 1 if self.settings.transcription_provider == ApiProvider.Gemini.value else 0
@@ -911,12 +923,22 @@ class MainWindow(Adw.ApplicationWindow):
         # 2. Minimize window
         self.minimize()
 
-        # 3. Paste via wl-copy or xdotool/ydotool if present
+        # 3. Paste via wl-copy or xdotool/ydotool/wtype if present
         def perform_paste():
             try:
                 subprocess.run(["wl-copy", text], check=False)
             except Exception:
                 pass
+
+            wtype = shutil.which("wtype")
+            xdotool = shutil.which("xdotool")
+            ydotool = shutil.which("ydotool")
+            if wtype:
+                subprocess.run([wtype, "-M", "ctrl", "-k", "v", "-m", "ctrl"], check=False)
+            elif xdotool:
+                subprocess.run([xdotool, "key", "ctrl+v"], check=False)
+            elif ydotool:
+                subprocess.run([ydotool, "key", "29:1", "47:1", "47:0", "29:0"], check=False)
             return False
 
         GLib.timeout_add(400, perform_paste)
@@ -939,7 +961,8 @@ class MainWindow(Adw.ApplicationWindow):
 
     def show_toast(self, message: str):
         toast = Adw.Toast.new(message)
-        # Find active overlay if possible or display notification
+        if hasattr(self, "toast_overlay"):
+            self.toast_overlay.add_toast(toast)
         print(f"[AIDictation] {message}")
 
     def _on_close_requested(self, window):

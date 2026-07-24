@@ -284,6 +284,12 @@ class AudioRecorder:
             return
 
         self._stop_event.set()
+        if self._backend == "pyaudio" and self._stream is not None:
+            try:
+                self._stream.stop_stream()
+            except Exception:
+                pass
+
         if self._thread is not None and self._thread.is_alive():
             self._thread.join(timeout=1.5)
 

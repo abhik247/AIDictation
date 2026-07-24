@@ -27,6 +27,7 @@ class RewordService:
 
         request_body = {
             "model": model,
+            "temperature": 0.2,
             "messages": [
                 {
                     "role": "user",
@@ -90,7 +91,10 @@ class RewordService:
                         {"text": prompt}
                     ]
                 }
-            ]
+            ],
+            "generationConfig": {
+                "temperature": 0.2,
+            },
         }
 
         if HAS_REQUESTS:

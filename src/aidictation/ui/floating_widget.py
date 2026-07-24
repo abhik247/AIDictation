@@ -89,8 +89,15 @@ class FloatingRecorderWidget(Gtk.Window):
             return
         dx = x - self._drag_start_x
         dy = y - self._drag_start_y
-        if abs(dx) > 4 or abs(dy) > 4:
+        if abs(dx) > 6 or abs(dy) > 6:
             self._suppress_click = True
+            try:
+                device = controller.get_current_event_device()
+                timestamp = Gdk.CURRENT_TIME
+                self.begin_move_drag(Gdk.BUTTON_PRIMARY, int(x), int(y), timestamp)
+                self._is_dragging = False
+            except Exception:
+                pass
 
     def _on_drag_released(self, gesture, n_press, x, y):
         self._is_dragging = False
